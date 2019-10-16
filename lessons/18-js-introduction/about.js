@@ -1,0 +1,1 @@
+alert("Hello, world! this is the about page");
