@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: orange;
+    height: 200px;
+}
+main{
+    background-color: palegreen;
+    height: 600px;
+}
+footer{
+    background-color: cadetblue;
+}
