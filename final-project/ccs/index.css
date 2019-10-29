@@ -49,18 +49,22 @@ main{
     height:80vh;
 }
 .btn-menu{
-    padding: 20px;
-    width:240px;
+    
     border-radius: 5px;
-    border: 1px solid #ddd;
-    background:rgba(255,255,255,0.8);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font:caption;
-    color: #444;
+    border-color:rgba(26,26,26,.15);
+    background:white;
+    color:#1a1a1a;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 21px 34px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
 } 
 .btn-menu:hover{    
-    background:rgba(255,255,255,1);    
-    color: #000;
+    background:#DDD   
 } 
 
 
