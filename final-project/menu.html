@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <link rel="stylesheet" href="ccs/index.css">
+    <link rel="stylesheet" href="ccs/style.css">
+    <link rel="stylesheet" href="ccs/menu.css">
     <script src="js/index.js"></script>
-    <title>Home</title>
+    <title>Menu</title>
 </head>
 <body>
     <div id="container"> 
             <header>
-                    <div class="box box1">Breakfast</div>
-                    <div class="box box2">Salad - Soup</div>
-                    <div class="box box3">Sandwhich</div>
-                    <div class="box box5">Burger</div>
-                    <div class="box box6">Vietnamese</div>
-                    <div class="box box7">Nellie special</div>
-                    <div class="box box8">Homemade</div>
-                    <div class="box box9">Beverage</div>
+                    <img src="https://via.placeholder.com/120?Text=logo" id="logo"/>
                     <!--div class="box box10">Vietnamese sub</div-->
+                    <div class="header-search">
+                        <input type="text" id="search-box"/>
+                    </div>
+                    <div class="header-right">
+                        <a href="#">My Favorite</a>
+                        <a href="#">My Order</a>
+                        <img src="https://via.placeholder.com/60?Text=logo" id="profile"/>
+                    </div>
             </header>
             <main>                
-                <div>
-                    <a class="btn-menu" id="btn-login" href="login.html">LOGIN</a>
-                    <a class="btn-menu" id="btn-order" href="menu.html">ORDER</a>                    
-                </div>                
+                <div id="main-right">
+                    Show menu categories             
+                </div>  
+                <div id="main-content">
+                    Show dishes
+                </div>              
             </main>
             <footer>
                 <div class="footer-text">Nellis Kitchen - 105 Delaronde Rd,  Saskatoon, Saskatchewan</div> 

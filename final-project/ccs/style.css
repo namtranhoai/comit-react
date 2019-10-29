@@ -1,11 +1,42 @@
 *{
     font-family: sans-serif;
 }
-
-header{
-    background-color: orange;
-    height: 200px;
+html{
+    padding: 0px;    
 }
+body{
+    padding:0px;
+}
+#container{
+    display:flex;
+    justify-content:stretch;
+    flex-direction: column;
+
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 8px;
+}
+header .header-right{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;    
+}
+header .header-right > a,img{
+    margin-right: 20px;
+}
+header .header-right > a{
+    color: #333;
+    text-decoration: none;
+}
+header .header-right > a:hover{
+    text-decoration: underline;
+}
+
 main{
     background-color: palegreen;
     height: 600px;
