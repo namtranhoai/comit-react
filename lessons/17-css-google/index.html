@@ -26,6 +26,8 @@
         }
         .image-profile{
             border-radius: 50%;
+            width:40px;
+            height:40px;
         }
         nav div > a{
             color: #333;
@@ -40,8 +42,9 @@
             justify-content: center;
             align-items: center;
         }
-        main img{
-            width:380px;
+        main > img{
+            padding-top: 109px;
+            width:279px;
             margin-bottom: 30px;
         }
         .search-container{
@@ -51,23 +54,26 @@
             margin-bottom: 15px;
             border-radius: 20px;
         }
-        .search-container img{
+        .search-container > img{
             width:15px;            
-            margin:4px;
+            margin:4px 10px 4px 10px;
         }
-        .search-container input{
+        .search-container > input{
             width:480px;
-            border:0px;
-            margin:10px;
+            border:none;
+            padding: 10px 0 10px 0;
+            -webkit-tap-highlight-color: transparent;   
+            background-color:transparent;
+            outline: none;
         }
-        .search-container input:hover{
+        .search-container > input:hover{
            border: 0;
         }
         .button-container{
             display:flex;
             justify-content:center;
         }
-        .button-container button{
+        .button-container > button{
             margin-left:15px;
             padding:7px 15px;
             border-radius: 4px;
@@ -75,7 +81,7 @@
             border: 1px solid  #eee;
             color:rgba(0,0,0,0.4);
         }
-        .button-container button:hover{
+        .button-container > button:hover{
             border: 1px solid rgba(0,0,0,0.2);
             color:rgba(0,0,0,0.8);
         }
@@ -97,18 +103,21 @@
             right: 0;
             position: absolute;
             display:flex;            
-            flex-direction: column;
-            font-size: 13px;
-        }
-        .footer-offer{
-            text-align: center;
-            padding-bottom: 15px;
-        }
-        .footer-nation{
-            border-top: 1px solid #e4e4e4;
+            flex-direction: column;           
             background:#f2f2f2;
-            text-align: left;           
-            height: 35px;
+            border-top: 1px solid #e4e4e4;
+            font-size:14px;
+        }
+       
+        .footer-nation{
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #e4e4e4;
+            height: 35px;            
+        }
+        .footer-nation span{
+            color: #5f6368;
+            padding:0 0 0 27px;          
         }
         .footer-links{
             display: flex;
@@ -116,16 +125,23 @@
             justify-content: space-between;
             align-items: center;
             border-top: 1px solid #e4e4e4;
-            background:#f2f2f2;
-            text-align: left;            
             height: 35px;
         }
+        .footer-links-right{
+            margin-right:30px;
+        }
         .footer-links a{
-            color: #333;
+            margin:0;
+            display: inline-block;
+            color: #5f6368;
             text-decoration: none;
+            padding:0 0 0 27px;
         }
         .footer-links a:hover{
             text-decoration: underline;
+        }
+        .offer-text{
+            font-size: small;
         }
     </style>
 </head>
@@ -139,7 +155,7 @@
             <a href="#">Email</a>
             <a href="#">Images</a>
             <img src="menu.png" alt=""/>
-            <img class="image-profile" src="http://placehold.it/40x40" alt="">
+            <img class="image-profile" src="avatar.jpg" alt="">
         </div>
     </nav>
     <main>
@@ -160,16 +176,14 @@
         <p class="live-container">
            <span class="live-text"> Live!</span> <a href="#">Watch the Federal Leaders' Debate 2019</a>
         </p>
-        <div class="footer-offer">
+        <div class="offer-text">
                 <span>Google offered in:</span> <a href="">Français</a>              
         </div>
     </main>
     <footer>
         
         <div class="footer-nation">
-                <p>
-                        Canada
-                </p>     
+                <span>Canada</span>
         </div>
         <div class="footer-links">
             <div>
@@ -177,7 +191,7 @@
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
             </div>
-            <div>
+            <div class="footer-links-right">
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
                 <a href="#">Settings</a>
